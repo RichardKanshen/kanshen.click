@@ -1,5 +1,5 @@
 body {
-    font-family: "VCR OSD Mono";
+    font-family: "VCR OSD Mono" !important;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -15,21 +15,29 @@ body {
     height: 100%;
 }
 
-.side-menu-container > webtitle {
+.side-menu-container>webtitle {
     color: #F0F0F0;
     background-color: #0F0F0F;
     height: 200px;
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
 }
 
 .menu {
     list-style: none;
+    position: fixed;
     margin: 0;
-    padding: 2.5px 8px 2.5px 8px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    left: 0;
+    border: #0F0F0F;
+    padding: 0;
 }
 
 .menu-button {
@@ -41,22 +49,33 @@ body {
     align-items: center;
     color: #F0F0F0;
     background-color: #0F0F0F;
+    font-family: 'VCR OSD Mono';
+    width: 250px;
     cursor: pointer;
-    outline: none;
+    font-size: 24px;
+    top: 0;
+    position: relative;
+    border-block-color: transparent;
+    transition: 0.5s;
+    height: 64px;
+    justify-content: center;
 }
 
 .menu-button.active,
 .menu-button:hover {
     background-color: #F0F0F0;
     color: #0F0F0F;
+    font-size: 32px;
 }
 
 .middle-menu-container {
+    list-style: none;
     position: fixed;
-    top: 0;
+    margin: 0;
+    display: flex;
     left: 250px;
-    width: 250px;
-    height: 100%;
+    border: #0F0F0F;
+    padding: 0;
 }
 
 .section.active {
