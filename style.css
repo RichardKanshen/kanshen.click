@@ -13,6 +13,7 @@ body {
     left: 0;
     width: 250px;
     height: 100%;
+    background-color: #0F0F0F;
 }
 
 .side-menu-container>webtitle {
@@ -36,7 +37,6 @@ body {
     margin: 0;
     display: flex;
     left: 0;
-    border: #0F0F0F;
     padding: 0;
 }
 
@@ -61,7 +61,6 @@ body {
     justify-content: center;
 }
 
-.menu-button.active,
 .menu-button:hover {
     background-color: #F0F0F0;
     color: #0F0F0F;
