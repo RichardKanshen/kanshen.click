@@ -1,0 +1,67 @@
+body {
+    font-family: "VCR OSD Mono";
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #F0F0F0;
+    color: #0F0F0F;
+}
+
+.side-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+
+.side-menu-container > webtitle {
+    color: #F0F0F0;
+    background-color: #0F0F0F;
+    height: 200px;
+    width: 100%;
+    margin: auto;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 2.5px 8px 2.5px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-button {
+    list-style: none;
+    margin: 0;
+    padding: 2.5px 8px 2.5px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #F0F0F0;
+    background-color: #0F0F0F;
+    cursor: pointer;
+    outline: none;
+}
+
+.menu-button.active,
+.menu-button:hover {
+    background-color: #F0F0F0;
+    color: #0F0F0F;
+}
+
+.middle-menu-container {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+}
+
+.section.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
