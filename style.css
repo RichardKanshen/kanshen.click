@@ -74,6 +74,17 @@ body {
     width: 250px;
     height: 100%;
     background-color: #0F0F0F;
+    display: none;
+}
+
+.mid-menu-container.active {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    background-color: #0F0F0F;
+    display: flex !important;
 }
 
 .mid-menu-button:hover {
