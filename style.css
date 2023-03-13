@@ -132,6 +132,12 @@ ul {
     padding: 0;
 }
 
+article {
+    width: 100%;
+    left: 500px;
+    height: 100%;
+}
+
 article#colorétte {
     background: linear-gradient(to bottom, #00247c, #000000);
 }
