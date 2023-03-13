@@ -1,4 +1,4 @@
-const menuButtons = document.querySelectorAll('.menu-button');
+const menuButtons = document.querySelectorAll('.side-menu-button');
 const sections = document.querySelectorAll('.section');
 
 // Set the first menu button and section to active by default

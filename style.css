@@ -102,9 +102,12 @@ body {
     justify-content: center;
     border-width: 0;
 }
+.section {
+    display: none !important;
+}
 
 .section.active {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
