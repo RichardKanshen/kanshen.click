@@ -55,10 +55,10 @@ body {
     font-size: 24px;
     top: 0;
     position: relative;
-    border-block-color: transparent;
     transition: 0.5s;
     height: 64px;
     justify-content: center;
+    border-width: 0;
 }
 
 .side-menu-button:hover {
@@ -97,10 +97,10 @@ body {
     font-size: 24px;
     top: 0;
     position: relative;
-    border-block-color: transparent;
     transition: 0.5s;
     height: 64px;
     justify-content: center;
+    border-width: 0;
 }
 
 .section.active {
