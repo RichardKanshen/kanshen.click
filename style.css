@@ -150,7 +150,7 @@ article {
 }
 
 article.active {
-    display: flex !important;
+    display: block !important;
 }
 
 article#colorétte {
