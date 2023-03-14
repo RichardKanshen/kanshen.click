@@ -28,15 +28,19 @@ midMenuButtons.forEach((button, index) => {
     });
 });
 
-// Get the article element
-const colorettearticle = document.querySelector('#colorétte');
-const iFrame = document.querySelector('.colorétteembed');
-// Get the URL parameter from the iFrame
-const ColoretteUrlParams = new URLSearchParams(iFrame.contentDocument.referrer);
-const ColoretteColorParam = ColoretteUrlParams.get('color');
+const iFrame = document.getElementsByClassName("colorétteembed");
 
-// If the "color" parameter is present in the URL, update the article background
-if (ColoretteColorParam) {
-  colorettearticle.style.backgroundImage = `linear-gradient(to bottom, #${ColoretteColorParam}, #000000)`;
-}
+// listen for messages from the iframe
+window.addEventListener('message', event => {
+    // check that the message came from the correct iframe
+    if (event.source === iFrame.contentWindow) {
+        // get the color parameter from the message data
+        const colorParam = event.data.color;
 
+        // set the background color of the article
+        if (colorParam) {
+            const article = document.getElementById('colorétte+');
+            article.style.background = `linear-gradient(to bottom, #${colorParam}, #000000)`;
+        }
+    }
+});
