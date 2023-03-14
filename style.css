@@ -146,6 +146,11 @@ article {
     height: 100%;
     position: fixed;
     width: -webkit-fill-available;
+    display: none;
+}
+
+article.active {
+    display: flex !important;
 }
 
 article#colorétte {
