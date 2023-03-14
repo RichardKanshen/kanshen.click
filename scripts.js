@@ -30,7 +30,7 @@ midMenuButtons.forEach((button, index) => {
 
 // Get the article element
 const colorettearticle = document.querySelector('#colorétte');
-const iFrame = document.querySelector('.coloretteembed');
+const iFrame = document.querySelector('.colorétteembed');
 // Get the URL parameter from the iFrame
 const ColoretteUrlParams = new URLSearchParams(iFrame.location.search);
 const colorParam = ColoretteUrlParams.get('color');
