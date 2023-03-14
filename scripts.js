@@ -36,7 +36,7 @@ const ColoretteUrlParams = new URLSearchParams(iFrame.contentWindow.location.hre
 const ColoretteColorParam = ColoretteUrlParams.get('color');
 
 // If the "color" parameter is present in the URL, update the article background
-if (colorParam) {
+if (ColoretteColorParam) {
   colorettearticle.style.backgroundImage = `linear-gradient(to bottom, #${ColoretteColorParam}, #000000)`;
 }
 
