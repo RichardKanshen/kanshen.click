@@ -32,7 +32,7 @@ midMenuButtons.forEach((button, index) => {
 const colorettearticle = document.querySelector('#colorétte');
 const iFrame = document.querySelector('.colorétteembed');
 // Get the URL parameter from the iFrame
-const ColoretteUrlParams = new URLSearchParams(iFrame.contentWindow.location.href);
+const ColoretteUrlParams = new URLSearchParams(iFrame.contentDocument.referrer);
 const ColoretteColorParam = ColoretteUrlParams.get('color');
 
 // If the "color" parameter is present in the URL, update the article background
