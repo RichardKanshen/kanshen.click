@@ -168,3 +168,13 @@ articledescription {
     font-size: 16px;
     width: fit-content;
 }
+
+iframe.projectembed {
+    margin: auto;
+    display: block;
+    margin-top: 60px;
+    border-width: 0;
+    width: 90%;
+    height: 75%;
+    border-radius: 25px;
+}
